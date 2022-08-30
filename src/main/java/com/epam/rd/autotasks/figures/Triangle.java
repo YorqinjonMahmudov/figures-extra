@@ -13,18 +13,18 @@ public class Triangle extends Figure {
 
     public Triangle(Point parameter1, Point parameter2, Point parameter3) {
         
-         if ((first == null) || (second == null) || (third == null))
+        
+        this.first = parameter1;
+        this.second = parameter2;
+        this.third = parameter3;
+
+        if ((first == null) || (second == null) || (third == null))
             throw new IllegalArgumentException();
 
         if (area() == 0)
             throw new IllegalArgumentException();
 
         
-        this.first = parameter1;
-        this.second = parameter2;
-        this.third = parameter3;
-
-       
     }
 
 
