@@ -17,4 +17,9 @@ class Point {
         return y;
     }
 
+     public boolean equals(Point p) {
+        return Math.abs(p.getX() - this.getX()) <= 0.0001
+                && Math.abs(p.getY() - this.getY()) <= 0.0001;
+    }
+
 }
