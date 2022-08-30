@@ -17,7 +17,7 @@ public class Triangle extends Figure {
         this.third = parameter3;
 
         if ((first == null) || (second == null) || (third == null))
-            throw new RuntimeException();
+            throw new IllegalArgumentException();
 
         if (area() == 0)
             throw new IllegalArgumentException();
@@ -82,4 +82,3 @@ public class Triangle extends Figure {
         return third;
     }
 }
-
